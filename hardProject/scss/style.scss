@@ -1,0 +1,173 @@
+@font-face {
+	font-family: 'UniversCE';
+	src: url('../fonts/Univers CE 45 Light.eot');
+	src: local('☺'), url('../fonts/Univers CE 45 Light.woff') format('woff'), url('fonts/Univers CE 45 Light.ttf') format('truetype'), url('fonts/Univers CE 45 Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SegoeWP';
+	src: url('../fonts/ofont.ru_Segoe WP.eot');
+	src: local('☺'), url('../fonts/ofont.ru_Segoe WP.woff') format('woff'), url('../fonts/ofont.ru_Segoe WP.ttf') format('truetype'), url('../fonts/ofont.ru_Segoe WP.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MrsEavesItalic';
+	src: url('../fonts/MrsEavesOT-Italic.eot');
+	src: local('☺'), url('../fonts/MrsEavesOT-Italic.woff') format('woff'), url('fonts/MrsEavesOT-Italic.ttf') format('truetype'), url('fonts/MrsEavesOT-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+
+header{
+	height: 495px;
+	background: linear-gradient(to top, #36555a, #28212d)
+}
+.head {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 174px 0px 219px;
+	&__logo {
+		padding-top: 100px;
+		opacity: 0.68;
+		color: #ffffff;
+		font-family: "Mrs Eaves Italic";
+		font-size: 119px;
+		font-weight: 400;
+		line-height: 32.99px;
+	}
+	&__menu {
+		display: flex;
+	}
+	&__menu-item {
+		padding-top: 55px;
+		width: 130px;
+		color: #ffffff;
+		font-family: "SegoeWP";
+		font-size: 23px;
+		font-weight: 300;
+	}
+	&__menu-item:hover{
+		color: #000;
+	}
+}
+
+
+.slider {
+	&__container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+	}
+	&__img {
+		margin-top: 88px;
+	}
+	&__text {}
+	&__text-item {
+		font-family: "UniversCE";
+		font-weight: 300;
+		color: #ffffff;
+		font-size: 40px;
+		margin: 0px 0px 28px 0px;
+	}
+	&__text-button {}
+	&__prev {}
+	&__next {}
+}
+.sliderp {
+	color: #ffffff;
+font-family: "SegoeWP";
+font-size: 45px;
+font-weight: 300;
+padding-bottom: 10px;
+}
+.button1 {
+	width: 138px;
+	height: 38px;
+	border: 4px solid rgba(0, 0, 0, 0.37);
+	background-color: #12b367;
+	opacity: 0.42;
+	color: #ffffff;
+	font-family: "SegoeWP";
+	font-size: 23px;
+	font-weight: 300;
+}
+.Prev {
+	cursor: pointer; 
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: #fff;
+	transition: 0.6s ease;
+}
+.Next {
+	cursor: pointer; 
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: #fff;
+	transition: 0.6s ease;
+	right: 0;
+}
+.prev:hover, next:hover{
+	background-color: green;
+
+}
+.Fade{
+	-webkit-animation-name:fads;
+	-webkit-animation-duration:1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+	from{ opacity: .4}
+	to{opacity: 1}
+}
+@-keyframes fade{
+	from{ opacity: .4}
+	to{opacity: 1}
+}
