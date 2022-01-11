@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="device-width"/>
+	</head>
+	<body>
+<h1>hi!</h1>
+<div data-say-hi="yes">Привет!</div>
+
+<ul>
+	<li>Корчи</li>
+	<li id="321">Йончи</li>
+</ul>
+
+<div class="like"></div>
+<div class="subscribe"></div>
+<div class="like subscribe"></div>
+<div class="search">
+	<div class="search__column">
+	<div class="search__icon">
+		<button type="button" class="button">ПОИСК</button>
+	</div>
+	<div class="search__area">
+		<textarea name="text" id="123" class="textarea" maxlength="40"></textarea>
+		<div class="textarea__lenght">осталось <span> </span> символов</div>
+	</div>
+</div>
+</div>
+<div class="wrapper">
+	<form action="#" class="main__form" name="main">
+	<div class="main__form-column">
+		<div class="main__form-item">
+		<label for="input_1" class="main__form-label">Поле ввода</label>
+		<input name="nameInput" type="text" value="" placeholder="Ввод" class="main__form-item-text" id="input_1" maxlength="10" autocomplete="off">
+		<div class="counter__searchbar"><span> </span></div> 
+	</div>
+	
+	<div class="main__form-item">
+		<label for="input_2" class="main__form-label" value="Ввод" >Текстовое поле ввода</label>
+		<textarea placeholder="Ввод" name="nameTextArea" id="input_2" class="main-form__text" maxlength="50" autocomplete="off"></textarea>
+		<div class="counter"> осталось <span> </span> символов</div>
+	</div>
+</div>
+	<div class="main__form-column">
+		<div class="main__form-item">
+			<label class="main__form-label">Радиокнопки</label>
+			<div class="main__form-radio">
+				<input type="radio" name="nameRadio" id="radio_1" class="main__form-radio">
+				<label for="radio_1" class="main__form-inline-label">Кнопка 1</label>
+			</div>
+			<div class="main__form-radio">
+				<input type="radio" name="nameRadio" id="radio_2" class="main__form-radio">
+				<label for="radio_2" class="main__form-inline-label">Кнопка 2</label>
+			</div>
+		</div>
+		<div class="main__form-inline-item">
+			<input type="checkbox" id="check" class="main__form-checkbox">
+			<label for="check" class="main__form-inline-label">Чекбокс</label>
+		</div>
+		<div class="main__form-item">
+			<label for="file_1" class="main__form-label">Прикрепить файл</label>
+			<input type="file" id="file_1" name="nameFile" value="">
+		</div>
+		<div class="main__form-item">
+			<label for="select_1" class="main__form-label">Список</label>
+			<select name="nameSelect" id="select_1" class="main__form-select">
+				<option value="1" selected>10</option>
+				<option value="2">22</option>
+				<option value="3">54</option>
+			</select>
+		</div>
+	</div>
+	<div class="main__form-column">
+	<button class="main__form-button" type="submit">Кнопка отправки</button>
+</div>
+	</form>
+</div>
+<script src="C:\Users\BornToFly\Desktop\Javascript\js\js\script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</body>
+	</html>
